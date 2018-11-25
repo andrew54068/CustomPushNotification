@@ -22,6 +22,7 @@
 		C1969C5A21AAA62B0029EB4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1969C5D21AAA62B0029EB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1969C5F21AAA62B0029EB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1969C6521AAA85D0029EB4B /* CustomPushNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomPushNotification.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +55,7 @@
 		C1969C5221AAA6290029EB4B /* CustomPushNotification */ = {
 			isa = PBXGroup;
 			children = (
+				C1969C6521AAA85D0029EB4B /* CustomPushNotification.entitlements */,
 				C1969C5321AAA6290029EB4B /* AppDelegate.swift */,
 				C1969C5521AAA6290029EB4B /* ViewController.swift */,
 				C1969C5721AAA6290029EB4B /* Main.storyboard */,
@@ -96,6 +98,11 @@
 				TargetAttributes = {
 					C1969C4F21AAA6290029EB4B = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -282,9 +289,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomPushNotification/CustomPushNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomPushNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,9 +309,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CustomPushNotification/CustomPushNotification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomPushNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
