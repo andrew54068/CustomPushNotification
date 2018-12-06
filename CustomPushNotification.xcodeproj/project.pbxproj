@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C10222A421B70D79000C09F8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10222A321B70D79000C09F8 /* NotificationService.swift */; };
+		C10222A821B70D79000C09F8 /* CustomNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C10222A121B70D79000C09F8 /* CustomNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C15C025421AC4F860004E3BC /* nokia_turk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025321AC4F860004E3BC /* nokia_turk.mp3 */; };
 		C15C025621AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025521AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 */; };
 		C15C025721AC50020004E3BC /* nokia_turk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025321AC4F860004E3BC /* nokia_turk.mp3 */; };
@@ -32,6 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C10222A621B70D79000C09F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1969C4821AAA6290029EB4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C10222A021B70D79000C09F8;
+			remoteInfo = CustomNotificationService;
+		};
 		C19FF64221AADF01001A8FE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C1969C4821AAA6290029EB4B /* Project object */;
@@ -48,6 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				C10222A821B70D79000C09F8 /* CustomNotificationService.appex in Embed App Extensions */,
 				C19FF64421AADF01001A8FE2 /* CustomNotificationContent.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
@@ -56,6 +66,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C10222A121B70D79000C09F8 /* CustomNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C10222A321B70D79000C09F8 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		C10222A521B70D79000C09F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C15C025321AC4F860004E3BC /* nokia_turk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nokia_turk.mp3; sourceTree = "<group>"; };
 		C15C025521AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NEW_CHRISTMAS_RINGTONE.mp3; sourceTree = "<group>"; };
 		C1969C5021AAA6290029EB4B /* CustomPushNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPushNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C102229E21B70D79000C09F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1969C4D21AAA6290029EB4B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -102,11 +122,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C10222A221B70D79000C09F8 /* CustomNotificationService */ = {
+			isa = PBXGroup;
+			children = (
+				C10222A321B70D79000C09F8 /* NotificationService.swift */,
+				C10222A521B70D79000C09F8 /* Info.plist */,
+			);
+			path = CustomNotificationService;
+			sourceTree = "<group>";
+		};
 		C1969C4721AAA6290029EB4B = {
 			isa = PBXGroup;
 			children = (
 				C1969C5221AAA6290029EB4B /* CustomPushNotification */,
 				C19FF63B21AADF01001A8FE2 /* CustomNotificationContent */,
+				C10222A221B70D79000C09F8 /* CustomNotificationService */,
 				C19FF63621AADF01001A8FE2 /* Frameworks */,
 				C1969C5121AAA6290029EB4B /* Products */,
 			);
@@ -117,6 +147,7 @@
 			children = (
 				C1969C5021AAA6290029EB4B /* CustomPushNotification.app */,
 				C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */,
+				C10222A121B70D79000C09F8 /* CustomNotificationService.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -175,6 +206,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C10222A021B70D79000C09F8 /* CustomNotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C10222A921B70D79000C09F8 /* Build configuration list for PBXNativeTarget "CustomNotificationService" */;
+			buildPhases = (
+				C102229D21B70D79000C09F8 /* Sources */,
+				C102229E21B70D79000C09F8 /* Frameworks */,
+				C102229F21B70D79000C09F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomNotificationService;
+			productName = CustomNotificationService;
+			productReference = C10222A121B70D79000C09F8 /* CustomNotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C1969C4F21AAA6290029EB4B /* CustomPushNotification */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1969C6221AAA62B0029EB4B /* Build configuration list for PBXNativeTarget "CustomPushNotification" */;
@@ -188,6 +236,7 @@
 			);
 			dependencies = (
 				C19FF64321AADF01001A8FE2 /* PBXTargetDependency */,
+				C10222A721B70D79000C09F8 /* PBXTargetDependency */,
 			);
 			name = CustomPushNotification;
 			productName = CustomPushNotification;
@@ -221,6 +270,9 @@
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = kidnapper;
 				TargetAttributes = {
+					C10222A021B70D79000C09F8 = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					C1969C4F21AAA6290029EB4B = {
 						CreatedOnToolsVersion = 10.0;
 						SystemCapabilities = {
@@ -257,11 +309,19 @@
 			targets = (
 				C1969C4F21AAA6290029EB4B /* CustomPushNotification */,
 				C19FF63421AADF01001A8FE2 /* CustomNotificationContent */,
+				C10222A021B70D79000C09F8 /* CustomNotificationService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C102229F21B70D79000C09F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1969C4E21AAA6290029EB4B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -293,6 +353,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C102229D21B70D79000C09F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10222A421B70D79000C09F8 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1969C4C21AAA6290029EB4B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -316,6 +384,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C10222A721B70D79000C09F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C10222A021B70D79000C09F8 /* CustomNotificationService */;
+			targetProxy = C10222A621B70D79000C09F8 /* PBXContainerItemProxy */;
+		};
 		C19FF64321AADF01001A8FE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C19FF63421AADF01001A8FE2 /* CustomNotificationContent */;
@@ -351,6 +424,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C10222AA21B70D79000C09F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CW8X9NUYB;
+				INFOPLIST_FILE = CustomNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification.CustomNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C10222AB21B70D79000C09F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CW8X9NUYB;
+				INFOPLIST_FILE = CustomNotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification.CustomNotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C1969C6021AAA62B0029EB4B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -402,7 +515,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -457,7 +570,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -552,6 +665,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C10222A921B70D79000C09F8 /* Build configuration list for PBXNativeTarget "CustomNotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C10222AA21B70D79000C09F8 /* Debug */,
+				C10222AB21B70D79000C09F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1969C4B21AAA6290029EB4B /* Build configuration list for PBXProject "CustomPushNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
