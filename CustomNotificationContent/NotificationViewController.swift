@@ -22,12 +22,22 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     }
     
     func didReceive(_ notification: UNNotification) {
-        self.label?.text = notification.request.content.body
+        guard let payload: [String: AnyObject] = notification.request.content.userInfo as? [String: AnyObject] else { return }
         
-        let imageAttachment = notification.request.content.attachments[0]
+        self.label?.text = notification.request.content.title
         
-        guard let imageData = NSData(contentsOf: imageAttachment.url) else { return }
-        imageView.image = UIImage(data: imageData as Data)
+        let session: URLSession = URLSession(configuration: .default)
+        if let imageUrl: URL = URL(string: payload["url"] as? String ?? "") {
+            let dataTask: URLSessionDataTask = session.dataTask(with: imageUrl) { [weak self] (data, response, error) in
+                guard let self = self else { return }
+                if error == nil, let imageData: Data = data {
+                    DispatchQueue.main.async {
+                        self.imageView.image = UIImage(data: imageData as Data)
+                    }
+                }
+            }
+            dataTask.resume()
+        }
         
     }
 
