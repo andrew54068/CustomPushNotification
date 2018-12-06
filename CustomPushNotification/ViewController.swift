@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         content.title = "this is title"
         content.threadIdentifier = "threadIdentifier"
         content.categoryIdentifier = "categoryIdentifier"
+        content.userInfo = ["url": "https://avatars0.githubusercontent.com/u/11587708?s=400&v=4"]
         
         guard let image = Bundle.main.url(forResource: "mario", withExtension: "png") else { return }
         let attachment = try! UNNotificationAttachment(identifier: "image", url: image, options: nil)
