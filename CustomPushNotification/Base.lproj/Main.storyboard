@@ -61,18 +61,23 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvJ-8V-YU8">
-                                            <rect key="frame" x="26" y="17" width="42" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvJ-8V-YU8">
+                                            <rect key="frame" x="26" y="17" width="280" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8a-RI-Ls7">
-                                            <rect key="frame" x="310" y="11" width="49" height="31"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M8a-RI-Ls7">
+                                            <rect key="frame" x="316" y="12" width="51" height="31"/>
                                         </switch>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="M8a-RI-Ls7" firstAttribute="centerY" secondItem="ifk-5F-dI6" secondAttribute="centerY" id="4ar-4B-REi"/>
+                                        <constraint firstItem="M8a-RI-Ls7" firstAttribute="leading" secondItem="kvJ-8V-YU8" secondAttribute="trailing" constant="10" id="Atc-PF-4fO"/>
+                                        <constraint firstAttribute="trailing" secondItem="M8a-RI-Ls7" secondAttribute="trailing" constant="10" id="Qai-MP-ubl"/>
+                                        <constraint firstItem="kvJ-8V-YU8" firstAttribute="centerY" secondItem="ifk-5F-dI6" secondAttribute="centerY" id="Sxb-9C-KjP"/>
+                                        <constraint firstItem="kvJ-8V-YU8" firstAttribute="leading" secondItem="ifk-5F-dI6" secondAttribute="leading" constant="26" id="y2a-7y-UL6"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="settingLabel" destination="kvJ-8V-YU8" id="C5T-WJ-cQg"/>
