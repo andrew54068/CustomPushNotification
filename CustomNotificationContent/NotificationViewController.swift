@@ -15,6 +15,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     @IBOutlet weak var label: UILabel?
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var slider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,7 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
     func didReceive(_ notification: UNNotification) {
         guard let payload: [String: AnyObject] = notification.request.content.userInfo as? [String: AnyObject] else { return }
         
-        self.label?.text = notification.request.content.body
+        label?.text = notification.request.content.body
         
         let session: URLSession = URLSession(configuration: .default)
         if let imageUrl: URL = URL(string: payload["url"] as? String ?? "") {
@@ -39,6 +40,10 @@ class NotificationViewController: UIViewController, UNNotificationContentExtensi
             dataTask.resume()
         }
         
+    }
+    
+    @IBAction func sliderAction(_ sender: UISlider) {
+        label?.text = String(sender.value)
     }
 
 }
