@@ -18,8 +18,8 @@ class NotificationService: UNNotificationServiceExtension {
         
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
-        print("🚽")
         
+        // reference: https://medium.com/@zhgchgli/ios-10-notification-service-extension-%E6%87%89%E7%94%A8-swift-cb6eba52a342
         if let bestAttemptContent = bestAttemptContent {
             
             guard let imageURLString = payload["url"] as? String, let imageURL = URL(string: imageURLString) else {
@@ -53,7 +53,6 @@ class NotificationService: UNNotificationServiceExtension {
                 
                 bestAttemptContent.body = (bestAttemptContent.body == "") ? ("立即查看") : (bestAttemptContent.body)
                 //如果body為空，則用預設內容"立即查看"
-                print("🚽🚽🚽🚽")
                 contentHandler(bestAttemptContent)
             }
             
