@@ -13,7 +13,7 @@
 		C15C025621AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025521AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 */; };
 		C15C025721AC50020004E3BC /* nokia_turk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025321AC4F860004E3BC /* nokia_turk.mp3 */; };
 		C15C025821AC50060004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025521AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 */; };
-		C15C025921AC50090004E3BC /* nick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C19FF64C21AAF761001A8FE2 /* nick.jpg */; };
+		C15C025921AC50090004E3BC /* (null) in Resources */ = {isa = PBXBuildFile; };
 		C1969C5421AAA6290029EB4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1969C5321AAA6290029EB4B /* AppDelegate.swift */; };
 		C1969C5621AAA6290029EB4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1969C5521AAA6290029EB4B /* ViewController.swift */; };
 		C1969C5921AAA6290029EB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1969C5721AAA6290029EB4B /* Main.storyboard */; };
@@ -26,9 +26,6 @@
 		C19FF63D21AADF01001A8FE2 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FF63C21AADF01001A8FE2 /* NotificationViewController.swift */; };
 		C19FF64021AADF01001A8FE2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FF63E21AADF01001A8FE2 /* MainInterface.storyboard */; };
 		C19FF64421AADF01001A8FE2 /* CustomNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C1A4E68321AC4348006B8E6D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4E68221AC4348006B8E6D /* GameScene.swift */; };
-		C1A4E68621AC4352006B8E6D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C1A4E68421AC4352006B8E6D /* GameScene.sks */; };
-		C1A4E68721AC4352006B8E6D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C1A4E68521AC4352006B8E6D /* Actions.sks */; };
 		C1F2C37921B97D3C00E8244F /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F2C37821B97D3C00E8244F /* mario.png */; };
 		C1F5AE9A21AC52A7009319DA /* New_Christmas_ringtone.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C1F5AE9921AC52A7009319DA /* New_Christmas_ringtone.aiff */; };
 /* End PBXBuildFile section */
@@ -88,9 +85,6 @@
 		C19FF63C21AADF01001A8FE2 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		C19FF63F21AADF01001A8FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		C19FF64121AADF01001A8FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1A4E68221AC4348006B8E6D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		C1A4E68421AC4352006B8E6D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		C1A4E68521AC4352006B8E6D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		C1F2C37821B97D3C00E8244F /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 		C1F5AE9921AC52A7009319DA /* New_Christmas_ringtone.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = New_Christmas_ringtone.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,9 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				C19F946721AC58B500E4C335 /* CustomNotificationContent.entitlements */,
-				C1A4E68521AC4352006B8E6D /* Actions.sks */,
-				C1A4E68421AC4352006B8E6D /* GameScene.sks */,
-				C1A4E68221AC4348006B8E6D /* GameScene.swift */,
 				C19FF63C21AADF01001A8FE2 /* NotificationViewController.swift */,
 				C19FF63E21AADF01001A8FE2 /* MainInterface.storyboard */,
 				C19FF64121AADF01001A8FE2 /* Info.plist */,
@@ -341,11 +332,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C15C025821AC50060004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 in Resources */,
-				C1A4E68621AC4352006B8E6D /* GameScene.sks in Resources */,
-				C1A4E68721AC4352006B8E6D /* Actions.sks in Resources */,
 				C19FF64021AADF01001A8FE2 /* MainInterface.storyboard in Resources */,
-				C1F5AE9B21AC52A7009319DA /* New_Christmas_ringtone.aiff in Resources */,
-				C15C025921AC50090004E3BC /* nick.jpg in Resources */,
+				C15C025921AC50090004E3BC /* (null) in Resources */,
 				C15C025721AC50020004E3BC /* nokia_turk.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,7 +364,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1A4E68321AC4348006B8E6D /* GameScene.swift in Sources */,
 				C19FF63D21AADF01001A8FE2 /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

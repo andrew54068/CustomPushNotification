@@ -14,16 +14,55 @@ class NotificationService: UNNotificationServiceExtension {
     var bestAttemptContent: UNMutableNotificationContent?
 
     override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+        guard let payload: [String: AnyObject] = request.content.userInfo as? [String: AnyObject] else { return }
+        
         self.contentHandler = contentHandler
         bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
+        print("🚽")
         
         if let bestAttemptContent = bestAttemptContent {
+            
+            guard let imageURLString = payload["url"] as? String, let imageURL = URL(string: imageURLString) else {
+                contentHandler(bestAttemptContent)
+                return
+                //若無附圖片，則不用特別處理
+            }
             // Modify the notification content here...
             bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
             bestAttemptContent.subtitle = "@@"
             
-            contentHandler(bestAttemptContent)
+            let dataTask = URLSession.shared.dataTask(with: imageURL) { (data, response, error) in
+                guard let fileURL = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(imageURL.lastPathComponent) else {
+                    contentHandler(bestAttemptContent)
+                    return
+                }
+                guard (try? data?.write(to: fileURL)) != nil else {
+                    contentHandler(bestAttemptContent)
+                    return
+                }
+                
+                guard let attachment = try? UNNotificationAttachment(identifier: "image", url: fileURL, options: nil) else {
+                    contentHandler(bestAttemptContent)
+                    return
+                }
+                //以上為讀取圖片連結並下載到手機並放入建立UNNotificationAttachment
+                
+                bestAttemptContent.categoryIdentifier = "categoryIdentifier"
+                bestAttemptContent.attachments = [attachment]
+                //為推播添加附件圖片
+                
+                bestAttemptContent.body = (bestAttemptContent.body == "") ? ("立即查看") : (bestAttemptContent.body)
+                //如果body為空，則用預設內容"立即查看"
+                print("🚽🚽🚽🚽")
+                contentHandler(bestAttemptContent)
+            }
+            
+            DispatchQueue.global().asyncAfter(deadline: .now() + 15) {
+                dataTask.resume()
+            }
+            
         }
+        
     }
     
     override func serviceExtensionTimeWillExpire() {

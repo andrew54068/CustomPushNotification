@@ -9,34 +9,27 @@
 import UIKit
 import UserNotifications
 import UserNotificationsUI
-import SpriteKit
-import GameplayKit
 
 class NotificationViewController: UIViewController, UNNotificationContentExtension {
-    
-    @IBOutlet weak var gameView: SKView!
+
+    @IBOutlet weak var label: UILabel?
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let view = gameView {
-            // Load the SKScene from 'GameScene.sks'
-            if let scene = SKScene(fileNamed: "GameScene") {
-                // Set the scale mode to scale to fit the window
-                scene.scaleMode = .aspectFit
-                
-                // Present the scene
-                view.presentScene(scene)
-            }
-            
-            view.ignoresSiblingOrder = true
-            
-            view.showsFPS = true
-            view.showsNodeCount = true
-        }
+        // Do any required interface initialization here.
     }
     
     func didReceive(_ notification: UNNotification) {
+        self.label?.text = notification.request.content.body
+        
+        let imageAttachment = notification.request.content.attachments[0]
+        
+        guard let imageData = NSData(contentsOf: imageAttachment.url) else { return }
+        imageView.image = UIImage(data: imageData as Data)
         
     }
+
 
 }

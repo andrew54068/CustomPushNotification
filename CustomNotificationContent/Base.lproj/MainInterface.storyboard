@@ -15,36 +15,47 @@
             <objects>
                 <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="CustomNotificationContent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="510"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IhI-iA-Qin" customClass="SKView">
-                                <rect key="frame" x="16" y="40" width="288" height="450"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="450" id="szO-Sz-FkP"/>
-                                </constraints>
-                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3jY-89-sue">
+                                <rect key="frame" x="40" y="95.5" width="240" height="128.5"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nick 的小小世界" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="GcN-lo-r42">
+                                <rect key="frame" x="97.5" y="45" width="125.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qtG-WU-TqD">
+                                <rect key="frame" x="137" y="261" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45882353186607361" green="0.74901962280273438" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="IhI-iA-Qin" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="20" id="6py-60-grm"/>
-                            <constraint firstItem="IhI-iA-Qin" firstAttribute="centerY" secondItem="2BE-c3-nQJ" secondAttribute="centerY" id="KnL-5o-JOf"/>
-                            <constraint firstItem="IhI-iA-Qin" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="hOo-lU-eXp"/>
-                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="IhI-iA-Qin" secondAttribute="trailing" constant="16" id="zmE-Ej-M2r"/>
+                            <constraint firstItem="qtG-WU-TqD" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="ChO-cs-yLK"/>
+                            <constraint firstItem="3jY-89-sue" firstAttribute="top" secondItem="GcN-lo-r42" secondAttribute="bottom" constant="30" id="EQp-as-KoI"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="kEL-E2-ZeS"/>
+                            <constraint firstItem="qtG-WU-TqD" firstAttribute="top" secondItem="3jY-89-sue" secondAttribute="bottom" constant="37" id="mCc-Il-Hrm"/>
+                            <constraint firstItem="3jY-89-sue" firstAttribute="centerX" secondItem="2BE-c3-nQJ" secondAttribute="centerX" id="sQh-50-3v4"/>
+                            <constraint firstItem="3jY-89-sue" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" constant="40" id="tGF-vC-Axh"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="qtG-WU-TqD" secondAttribute="bottom" constant="29" id="tQs-FO-rMa"/>
+                            <constraint firstItem="GcN-lo-r42" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="45" id="tSy-kh-ZsJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="320" height="510"/>
+                    <size key="freeformSize" width="320" height="320"/>
                     <connections>
-                        <outlet property="gameView" destination="IhI-iA-Qin" id="MvV-Yl-ncA"/>
+                        <outlet property="button" destination="qtG-WU-TqD" id="5PS-Ot-UkG"/>
+                        <outlet property="imageView" destination="3jY-89-sue" id="wJz-9G-r1s"/>
+                        <outlet property="label" destination="GcN-lo-r42" id="lpW-cU-7IG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="26.986506746626688"/>
         </scene>
     </scenes>
 </document>
