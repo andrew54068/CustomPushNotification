@@ -12,7 +12,6 @@
 		C1969C5921AAA6290029EB4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1969C5721AAA6290029EB4B /* Main.storyboard */; };
 		C1969C5B21AAA62B0029EB4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1969C5A21AAA62B0029EB4B /* Assets.xcassets */; };
 		C1969C5E21AAA62B0029EB4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1969C5C21AAA62B0029EB4B /* LaunchScreen.storyboard */; };
-		C196A53E21B9811300CEC7DE /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = C196A53D21B9811300CEC7DE /* mario.png */; };
 		C19FF62D21AAD607001A8FE2 /* NotificationSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FF62B21AAD607001A8FE2 /* NotificationSettingCell.swift */; };
 		C19FF63021AAD62F001A8FE2 /* NotificationSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FF62F21AAD62F001A8FE2 /* NotificationSettingController.swift */; };
 		C19FF63821AADF01001A8FE2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C19FF63721AADF01001A8FE2 /* UserNotifications.framework */; };
@@ -20,6 +19,9 @@
 		C19FF63D21AADF01001A8FE2 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19FF63C21AADF01001A8FE2 /* NotificationViewController.swift */; };
 		C19FF64021AADF01001A8FE2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19FF63E21AADF01001A8FE2 /* MainInterface.storyboard */; };
 		C19FF64421AADF01001A8FE2 /* CustomNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C1A4E68321AC4348006B8E6D /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4E68221AC4348006B8E6D /* GameScene.swift */; };
+		C1A4E68621AC4352006B8E6D /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C1A4E68421AC4352006B8E6D /* GameScene.sks */; };
+		C1A4E68721AC4352006B8E6D /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = C1A4E68521AC4352006B8E6D /* Actions.sks */; };
 		C1F2C37921B97D3C00E8244F /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F2C37821B97D3C00E8244F /* mario.png */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +58,6 @@
 		C1969C5D21AAA62B0029EB4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1969C5F21AAA62B0029EB4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1969C6521AAA85D0029EB4B /* CustomPushNotification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CustomPushNotification.entitlements; sourceTree = "<group>"; };
-		C196A53D21B9811300CEC7DE /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 		C19FF62B21AAD607001A8FE2 /* NotificationSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingCell.swift; sourceTree = "<group>"; };
 		C19FF62F21AAD62F001A8FE2 /* NotificationSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingController.swift; sourceTree = "<group>"; };
 		C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomNotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +66,9 @@
 		C19FF63C21AADF01001A8FE2 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		C19FF63F21AADF01001A8FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		C19FF64121AADF01001A8FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A4E68221AC4348006B8E6D /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		C1A4E68421AC4352006B8E6D /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		C1A4E68521AC4352006B8E6D /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		C1F2C37821B97D3C00E8244F /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +140,9 @@
 		C19FF63B21AADF01001A8FE2 /* CustomNotificationContent */ = {
 			isa = PBXGroup;
 			children = (
+				C1A4E68521AC4352006B8E6D /* Actions.sks */,
+				C1A4E68421AC4352006B8E6D /* GameScene.sks */,
+				C1A4E68221AC4348006B8E6D /* GameScene.swift */,
 				C19FF63C21AADF01001A8FE2 /* NotificationViewController.swift */,
 				C19FF63E21AADF01001A8FE2 /* MainInterface.storyboard */,
 				C19FF64121AADF01001A8FE2 /* Info.plist */,
@@ -248,7 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1F2C37A21B97D3C00E8244F /* mario.png in Resources */,
+				C1A4E68621AC4352006B8E6D /* GameScene.sks in Resources */,
+				C1A4E68721AC4352006B8E6D /* Actions.sks in Resources */,
 				C19FF64021AADF01001A8FE2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1A4E68321AC4348006B8E6D /* GameScene.swift in Sources */,
 				C19FF63D21AADF01001A8FE2 /* NotificationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -477,7 +486,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomNotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomNotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
