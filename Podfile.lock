@@ -1,0 +1,20 @@
+PODS:
+  - NWPusher (0.7.5)
+  - Swifter (1.4.5)
+
+DEPENDENCIES:
+  - NWPusher (~> 0.7.0)
+  - Swifter (~> 1.4.5)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - NWPusher
+    - Swifter
+
+SPEC CHECKSUMS:
+  NWPusher: 9b29a44754d88cb02c28a1e9bc8750845506123e
+  Swifter: eb2bc1d192a1c09169c7fefd01971565fa940521
+
+PODFILE CHECKSUM: e3472b227f31f02b2d33fde97f416c77aaaf5175
+
+COCOAPODS: 1.5.3
