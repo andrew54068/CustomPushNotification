@@ -33,6 +33,7 @@
 		C1F2C37921B97D3C00E8244F /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F2C37821B97D3C00E8244F /* mario.png */; };
 		C1F5AE9A21AC52A7009319DA /* New_Christmas_ringtone.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C1F5AE9921AC52A7009319DA /* New_Christmas_ringtone.aiff */; };
 		C1FD91D821E272EC00189D7F /* CustomPushNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */; };
+		C1FD91E021E2786800189D7F /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD91DF21E2786800189D7F /* MockServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		C1FD91D521E272EC00189D7F /* CustomPushNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPushNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushNotificationUITests.swift; sourceTree = "<group>"; };
 		C1FD91D921E272EC00189D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1FD91DF21E2786800189D7F /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
 		DFA556B4CBA59AC4B42CEC2E /* Pods-CustomPushNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPushNotification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomPushNotification/Pods-CustomPushNotification.debug.xcconfig"; sourceTree = "<group>"; };
 		E4B2D265FFCB342F6A8ABAF8 /* Pods-CustomNotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomNotificationService.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomNotificationService/Pods-CustomNotificationService.debug.xcconfig"; sourceTree = "<group>"; };
 		E7E1329DDECCC2E7AD8DFB71 /* Pods-CustomNotificationContent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomNotificationContent.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomNotificationContent/Pods-CustomNotificationContent.release.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */,
+				C1FD91DF21E2786800189D7F /* MockServer.swift */,
 				C1FD91D921E272EC00189D7F /* Info.plist */,
 			);
 			path = CustomPushNotificationUITests;
@@ -571,6 +574,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FD91E021E2786800189D7F /* MockServer.swift in Sources */,
 				C1FD91D821E272EC00189D7F /* CustomPushNotificationUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
