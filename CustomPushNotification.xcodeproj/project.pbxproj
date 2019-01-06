@@ -28,6 +28,7 @@
 		C19FF64421AADF01001A8FE2 /* CustomNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C1F2C37921B97D3C00E8244F /* mario.png in Resources */ = {isa = PBXBuildFile; fileRef = C1F2C37821B97D3C00E8244F /* mario.png */; };
 		C1F5AE9A21AC52A7009319DA /* New_Christmas_ringtone.aiff in Resources */ = {isa = PBXBuildFile; fileRef = C1F5AE9921AC52A7009319DA /* New_Christmas_ringtone.aiff */; };
+		C1FD91D821E272EC00189D7F /* CustomPushNotificationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = C19FF63421AADF01001A8FE2;
 			remoteInfo = CustomNotificationContent;
+		};
+		C1FD91DA21E272EC00189D7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1969C4821AAA6290029EB4B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1969C4F21AAA6290029EB4B;
+			remoteInfo = CustomPushNotification;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,6 +95,9 @@
 		C19FF64121AADF01001A8FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1F2C37821B97D3C00E8244F /* mario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mario.png; sourceTree = "<group>"; };
 		C1F5AE9921AC52A7009319DA /* New_Christmas_ringtone.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = New_Christmas_ringtone.aiff; sourceTree = "<group>"; };
+		C1FD91D521E272EC00189D7F /* CustomPushNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPushNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushNotificationUITests.swift; sourceTree = "<group>"; };
+		C1FD91D921E272EC00189D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +124,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1FD91D221E272EC00189D7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -131,6 +149,7 @@
 				C1969C5221AAA6290029EB4B /* CustomPushNotification */,
 				C19FF63B21AADF01001A8FE2 /* CustomNotificationContent */,
 				C10222A221B70D79000C09F8 /* CustomNotificationService */,
+				C1FD91D621E272EC00189D7F /* CustomPushNotificationUITests */,
 				C19FF63621AADF01001A8FE2 /* Frameworks */,
 				C1969C5121AAA6290029EB4B /* Products */,
 			);
@@ -142,6 +161,7 @@
 				C1969C5021AAA6290029EB4B /* CustomPushNotification.app */,
 				C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */,
 				C10222A121B70D79000C09F8 /* CustomNotificationService.appex */,
+				C1FD91D521E272EC00189D7F /* CustomPushNotificationUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +212,15 @@
 				C1F2C37821B97D3C00E8244F /* mario.png */,
 			);
 			path = img;
+			sourceTree = "<group>";
+		};
+		C1FD91D621E272EC00189D7F /* CustomPushNotificationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */,
+				C1FD91D921E272EC00189D7F /* Info.plist */,
+			);
+			path = CustomPushNotificationUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +280,24 @@
 			productReference = C19FF63521AADF01001A8FE2 /* CustomNotificationContent.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		C1FD91D421E272EC00189D7F /* CustomPushNotificationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1FD91DC21E272EC00189D7F /* Build configuration list for PBXNativeTarget "CustomPushNotificationUITests" */;
+			buildPhases = (
+				C1FD91D121E272EC00189D7F /* Sources */,
+				C1FD91D221E272EC00189D7F /* Frameworks */,
+				C1FD91D321E272EC00189D7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1FD91DB21E272EC00189D7F /* PBXTargetDependency */,
+			);
+			name = CustomPushNotificationUITests;
+			productName = CustomPushNotificationUITests;
+			productReference = C1FD91D521E272EC00189D7F /* CustomPushNotificationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -283,6 +330,10 @@
 							};
 						};
 					};
+					C1FD91D421E272EC00189D7F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C1969C4F21AAA6290029EB4B;
+					};
 				};
 			};
 			buildConfigurationList = C1969C4B21AAA6290029EB4B /* Build configuration list for PBXProject "CustomPushNotification" */;
@@ -301,6 +352,7 @@
 				C1969C4F21AAA6290029EB4B /* CustomPushNotification */,
 				C19FF63421AADF01001A8FE2 /* CustomNotificationContent */,
 				C10222A021B70D79000C09F8 /* CustomNotificationService */,
+				C1FD91D421E272EC00189D7F /* CustomPushNotificationUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -338,6 +390,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1FD91D321E272EC00189D7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -368,6 +427,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1FD91D121E272EC00189D7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1FD91D821E272EC00189D7F /* CustomPushNotificationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -380,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = C19FF63421AADF01001A8FE2 /* CustomNotificationContent */;
 			targetProxy = C19FF64221AADF01001A8FE2 /* PBXContainerItemProxy */;
+		};
+		C1FD91DB21E272EC00189D7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1969C4F21AAA6290029EB4B /* CustomPushNotification */;
+			targetProxy = C1FD91DA21E272EC00189D7F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +486,7 @@
 		C10222AA21B70D79000C09F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomNotificationService/Info.plist;
@@ -425,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification.CustomNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -434,6 +508,7 @@
 		C10222AB21B70D79000C09F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomNotificationService/Info.plist;
@@ -445,6 +520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification.CustomNotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -573,6 +649,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CustomPushNotification/CustomPushNotification.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomPushNotification/Info.plist;
@@ -583,6 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -594,6 +672,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CustomPushNotification/CustomPushNotification.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				INFOPLIST_FILE = CustomPushNotification/Info.plist;
@@ -604,6 +683,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -649,6 +729,46 @@
 			};
 			name = Release;
 		};
+		C1FD91DD21E272EC00189D7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CW8X9NUYB;
+				INFOPLIST_FILE = CustomPushNotificationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomPushNotification;
+			};
+			name = Debug;
+		};
+		C1FD91DE21E272EC00189D7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CW8X9NUYB;
+				INFOPLIST_FILE = CustomPushNotificationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CustomPushNotification;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -684,6 +804,15 @@
 			buildConfigurations = (
 				C19FF64621AADF01001A8FE2 /* Debug */,
 				C19FF64721AADF01001A8FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1FD91DC21E272EC00189D7F /* Build configuration list for PBXNativeTarget "CustomPushNotificationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1FD91DD21E272EC00189D7F /* Debug */,
+				C1FD91DE21E272EC00189D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

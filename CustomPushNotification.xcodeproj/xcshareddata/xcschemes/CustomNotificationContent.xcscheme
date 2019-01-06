@@ -43,13 +43,23 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C1FD91D421E272EC00189D7F"
+               BuildableName = "CustomPushNotificationUITests.xctest"
+               BlueprintName = "CustomPushNotificationUITests"
+               ReferencedContainer = "container:CustomPushNotification.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C19FF63421AADF01001A8FE2"
-            BuildableName = "CustomNotificationContent.appex"
-            BlueprintName = "CustomNotificationContent"
+            BlueprintIdentifier = "C1969C4F21AAA6290029EB4B"
+            BuildableName = "CustomPushNotification.app"
+            BlueprintName = "CustomPushNotification"
             ReferencedContainer = "container:CustomPushNotification.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
