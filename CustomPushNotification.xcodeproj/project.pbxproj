@@ -11,10 +11,9 @@
 		A5C2CB103E9DE0E694BFE651 /* Pods_CustomPushNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 531B507F3E375E1CDEBC6485 /* Pods_CustomPushNotification.framework */; };
 		C10222A421B70D79000C09F8 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10222A321B70D79000C09F8 /* NotificationService.swift */; };
 		C10222A821B70D79000C09F8 /* CustomNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C10222A121B70D79000C09F8 /* CustomNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C1236A3C21E3C18000EF129E /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD91DF21E2786800189D7F /* MockServer.swift */; };
 		C1236A3E21E3C23300EF129E /* UITestingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1236A3D21E3C23300EF129E /* UITestingConstants.swift */; };
 		C1236A3F21E3C23300EF129E /* UITestingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1236A3D21E3C23300EF129E /* UITestingConstants.swift */; };
-		C1236A4D21E3CE2500EF129E /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD91DF21E2786800189D7F /* MockServer.swift */; };
+		C1538A0621E3D95C0043721C /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1538A0521E3D95C0043721C /* MockServer.swift */; };
 		C15C025421AC4F860004E3BC /* nokia_turk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025321AC4F860004E3BC /* nokia_turk.mp3 */; };
 		C15C025621AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025521AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 */; };
 		C15C025721AC50020004E3BC /* nokia_turk.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C15C025321AC4F860004E3BC /* nokia_turk.mp3 */; };
@@ -120,6 +119,7 @@
 		C1236A4021E3C76E00EF129E /* NWPusher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NWPusher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1236A4221E3C76E00EF129E /* Swifter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Swifter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1236A4E21E3CF6F00EF129E /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		C1538A0521E3D95C0043721C /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
 		C15C025321AC4F860004E3BC /* nokia_turk.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nokia_turk.mp3; sourceTree = "<group>"; };
 		C15C025521AC4F9C0004E3BC /* NEW_CHRISTMAS_RINGTONE.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = NEW_CHRISTMAS_RINGTONE.mp3; sourceTree = "<group>"; };
 		C1969C5021AAA6290029EB4B /* CustomPushNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPushNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +146,6 @@
 		C1FD91D521E272EC00189D7F /* CustomPushNotificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPushNotificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPushNotificationUITests.swift; sourceTree = "<group>"; };
 		C1FD91D921E272EC00189D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1FD91DF21E2786800189D7F /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
 		DFA556B4CBA59AC4B42CEC2E /* Pods-CustomPushNotification.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPushNotification.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomPushNotification/Pods-CustomPushNotification.debug.xcconfig"; sourceTree = "<group>"; };
 		EBA7DE7FA1926AA173E9E209 /* Pods-CustomPushNotificationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomPushNotificationUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomPushNotificationUITests/Pods-CustomPushNotificationUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -302,9 +301,9 @@
 			children = (
 				C1B4D58D21E3A3D800F1C1D1 /* CustomPushNotification.p12 */,
 				C1FD91D721E272EC00189D7F /* CustomPushNotificationUITests.swift */,
-				C1FD91DF21E2786800189D7F /* MockServer.swift */,
 				C1B4D58F21E3AA7700F1C1D1 /* PushNotificationPayload.swift */,
 				C1236A3D21E3C23300EF129E /* UITestingConstants.swift */,
+				C1538A0521E3D95C0043721C /* MockServer.swift */,
 				C1FD91D921E272EC00189D7F /* Info.plist */,
 			);
 			path = CustomPushNotificationUITests;
@@ -600,7 +599,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1969C5621AAA6290029EB4B /* ViewController.swift in Sources */,
-				C1236A3C21E3C18000EF129E /* MockServer.swift in Sources */,
 				C1236A3E21E3C23300EF129E /* UITestingConstants.swift in Sources */,
 				C19FF62D21AAD607001A8FE2 /* NotificationSettingCell.swift in Sources */,
 				C1969C5421AAA6290029EB4B /* AppDelegate.swift in Sources */,
@@ -620,7 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1236A4D21E3CE2500EF129E /* MockServer.swift in Sources */,
+				C1538A0621E3D95C0043721C /* MockServer.swift in Sources */,
 				C1236A3F21E3C23300EF129E /* UITestingConstants.swift in Sources */,
 				C1FD91D821E272EC00189D7F /* CustomPushNotificationUITests.swift in Sources */,
 				C1B4D59021E3AA7700F1C1D1 /* PushNotificationPayload.swift in Sources */,
@@ -846,6 +844,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CustomPushNotification/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -856,7 +855,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -872,6 +871,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CW8X9NUYB;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CustomPushNotification/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -881,7 +881,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = kidnapper.CustomPushNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -938,6 +938,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/NWPusher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Swifter\"",
 				);
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CustomPushNotificationUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -950,7 +951,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CustomPushNotification;
 			};
@@ -968,6 +969,7 @@
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/NWPusher\"",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/Swifter\"",
 				);
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = CustomPushNotificationUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -979,7 +981,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = CustomPushNotification;
 			};
