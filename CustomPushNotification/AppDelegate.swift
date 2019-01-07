@@ -23,30 +23,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     @objc func requestAuthorization() {
-        if #available(iOS 12.0, *) {
-            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .provisional, .providesAppNotificationSettings]) { (granted, error) in
-                print(granted)
-                guard granted else { return }
-                self.getNotificationSettings()
-            }
-        } else {
+//        if #available(iOS 12.0, *) {
+//            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge, .provisional, .providesAppNotificationSettings]) { (granted, error) in
+//                print(granted)
+//                guard granted else { return }
+//                self.getNotificationSettings()
+//            }
+//        } else {
             UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { (granted, error) in
                 print(granted)
                 guard granted else { return }
                 self.getNotificationSettings()
             }
-        }
+//        }
     }
     
     func getNotificationSettings() {
         UNUserNotificationCenter.current().getNotificationSettings { settings in
-            if #available(iOS 12.0, *) {
-                guard settings.authorizationStatus == .provisional else { return }
-                DispatchQueue.main.async {
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
-                return
-            }
+//            if #available(iOS 12.0, *) {
+//                guard settings.authorizationStatus == .provisional else { return }
+//                DispatchQueue.main.async {
+//                    UIApplication.shared.registerForRemoteNotifications()
+//                }
+//                return
+//            }
             guard settings.authorizationStatus == .authorized else { return }
             DispatchQueue.main.async {
                 UIApplication.shared.registerForRemoteNotifications()
