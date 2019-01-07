@@ -20,6 +20,20 @@
                ReferencedContainer = "container:CustomPushNotification.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C1FD91D421E272EC00189D7F"
+               BuildableName = "CustomPushNotificationUITests.xctest"
+               BlueprintName = "CustomPushNotificationUITests"
+               ReferencedContainer = "container:CustomPushNotification.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

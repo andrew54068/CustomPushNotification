@@ -45,7 +45,7 @@ class MockServer {
             
             guard let serializedObject = try? JSONSerialization.jsonObject(with: Data(request.body), options: []),
                 let json = serializedObject as? JSON,
-                let token = json["deviceToken"] as? String else {
+                let token = json[UITestingConstants.pushTokenKey] as? String else {
                     return HttpResponse.badRequest(nil)
             }
             
@@ -57,6 +57,6 @@ class MockServer {
             return HttpResponse.ok(HttpResponseBody.text(""))
         }
         
-        server.POST["/pushEndpoint"] = response
+        server.POST[UITestingConstants.pushEndpoint] = response
     }
 }

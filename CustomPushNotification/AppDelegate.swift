@@ -57,6 +57,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let token = deviceToken.map { String(format: "%02.2hhx", arguments: [$0]) }.joined(separator: "")
         print(token)
+        sendPushTokenToServer(token: token)
+    }
+    
+    private func sendPushTokenToServer(token: String) {
+        let endPoint = "http://localhost:8080\(UITestingConstants.pushEndpoint)"
+        
+        guard let endpointUrl = URL(string: endPoint) else { return }
+        
+        var json: [String: Any] = [:]
+        json[UITestingConstants.pushTokenKey] = token
+        
+        guard let data = try? JSONSerialization.data(withJSONObject: json, options: []) else { return }
+        
+        var request: URLRequest = URLRequest(url: endpointUrl)
+        request.httpMethod = "POST"
+        request.httpBody = data
+        
+        let task: URLSessionTask = URLSession.shared.dataTask(with: request)
+        task.resume()
+    }
+    
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        // The token is not currently available.
+        print("Remote notification support is unavailable due to error: \(error.localizedDescription)")
     }
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
