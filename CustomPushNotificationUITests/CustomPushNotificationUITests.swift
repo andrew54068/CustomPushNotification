@@ -47,6 +47,7 @@ class CustomPushNotificationUITests: XCTestCase {
     func testPush() {
         // Test if the app been opened successfully.
         waitForElementToAppear(object: app.buttons["send local notify"])
+        app.terminate()
         
         // Tap the home button
         XCUIDevice.shared.press(XCUIDevice.Button.home)
